@@ -1,0 +1,16 @@
+DevOps (K8s test) :
+Need to deploy application on Kubernetes. Create t2.medium instance in mumbai region, install minikube ,nodejs 14 and required dependencies on it.  Run mysql 5.7 database on same cluster as container.  Update the mysql sever details in config/database.js. After creating minikube cluster and deploying mysql container in cluster, now deploy the given application on the cluster.  To ensure that the deployed app is accessible over the web using a public IP, it is recommended to use the Nginx Ingress Controller instead of a service as a load balancer.
+
+Q-1. Deploy app in dev namespace with resource quota.
+Q-2. Use database url in config map and DB username and password as secret for deployment. 
+Q-3.  Create image with dev tag and push to your docker hub account and deploy to k8s cluster.
+Q-4.  MySQL database should we use PV and PVC to store backup.
+Q-5. Create dev user in k8s cluster that need read only access to dev namespace and DevOps user with full cluster access.
+
+Download the code and deploy on application server. For more details check README.
+code : https://github.com/YameenGithub/DevOps-Test
+
+Note:
+ - Use nginx as ingress controller and Keep replicas as 1 in deployment.
+
+- Please share instance pem, dockerfile and k8s yaml files
