@@ -6,8 +6,8 @@ To ensure that the deployed app is accessible over the web using a public IP, it
 
 Q-1. Deploy app in dev namespace with resource quota.
 Q-2. Use database url in config map and DB username and password as secret for deployment. 
-Q-3.  Create image with dev tag and push to your docker hub account and deploy to k8s cluster.
-Q-4.  MySQL database should we use PV and PVC to store backup.
+Q-3. Create image with dev tag and push to your docker hub account and deploy to k8s cluster.
+Q-4. MySQL database should we use PV and PVC to store backup.
 Q-5. Create dev user in k8s cluster that need read only access to dev namespace and DevOps user with full cluster access.
 
 Download the code and deploy on application server. For more details check README.
